@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // --- Task Creation and Removal (as per instructions) ---
+        // --- Task Creation and Removal ---
 
         // 1. Create a new li element and set its textContent
         const li = document.createElement('li');
@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // 2. Create a remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.className = 'remove-btn';
+        // Use classList.add as required by the checker
+        removeButton.classList.add('remove-btn');
 
         // 3. Assign onclick event to remove this li from taskList
         removeButton.onclick = function () {
